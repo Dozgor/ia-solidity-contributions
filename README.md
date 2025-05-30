@@ -31,7 +31,7 @@ Feel free to reach out!
 – Dozgor
 # IA-Assisted Solidity Contributions
 
-Bienvenue ! Je m'appelle Igor, développeur Solidity en transition vers le freelance Web3.
+Bienvenue ! Je suis Dozgor, développeur Solidity en transition vers le freelance Web3.
 
 Ce dépôt regroupe mes contributions open source, expérimentations Solidity et tests réalisés avec l'assistance d'une IA spécialisée.
 
