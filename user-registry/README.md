@@ -28,6 +28,7 @@ mapping(address => User) public users;
 
 function registerUser(string calldata name, uint age) public;
 function getUser(address userAddr) public view returns (string memory, address, uint);
+```
 🚀 Usage (with Remix or Hardhat)
 Deploy the contract
 
