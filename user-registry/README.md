@@ -30,7 +30,7 @@ function registerUser(string calldata name, uint age) public;
 function getUser(address userAddr) public view returns (string memory, address, uint);
 ```
 
-**## 🚀 Usage (with Remix or Hardhat)**
+## 🚀 Usage (with Remix or Hardhat)
 
 Deploy the contract
 
@@ -42,7 +42,7 @@ Via users[msg.sender]
 
 Or call getUser(address)
 
-**## ✅ Example**
+## ✅ Example
 
 ```solidity
 
@@ -50,7 +50,7 @@ registerUser("Alice", 30);
 getUser(0xABC...); // returns ("Alice", 0xABC..., 30)
 ```
 
-**## 🧠 Concepts covered**
+## 🧠 Concepts covered
 
 struct for custom data types
 
@@ -64,11 +64,11 @@ memory for temporary access
 
 view functions for read-only access
 
-**## 📁 File**
+## 📁 File
 
 UserRegistry.sol — main contract file
 
-**## 👨‍💻 Author**
+## 👨‍💻 Author
 
 Dozgor — IA-assisted Solidity Contributor
 Part of the ia-solidity-contributions collection.
