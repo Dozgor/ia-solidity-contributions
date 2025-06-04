@@ -23,9 +23,13 @@ _requiredApprovals: Minimum number of approvals required to execute a transactio
 ## 📦 Core Functions
 
 Function	Description
+
 submitTransaction(address to, uint256 value, bytes calldata data)	Propose a new transaction
+
 approveTransaction(uint txIndex)	Approve a transaction (once per owner)
+
 getApprovalCount(uint txIndex)	Get number of approvals for a transaction
+
 executeTransaction(uint txIndex)	Executes the transaction if enough approvals
 
 ## 🛡️ Security
