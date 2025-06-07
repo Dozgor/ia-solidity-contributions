@@ -1,35 +1,118 @@
+# 🧱 Public Solidity Contributions – Dozgor (IA-assisted Solidity Contributor)
 
-# 🧱 Contributions publiques Solidity – Dozgor (IA-assisted Solidity Contributor)
-
-Bienvenue dans ce fichier récapitulatif de mes contributions publiques en Solidity, réalisées dans le cadre de mon apprentissage et de ma transition vers le freelance Web3.
-
----
-
-## ✅ Contribution 1 : OpenZeppelin Contracts – Test Beacon invalide
-
-- **PR publique** : [#5700 sur OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts/pull/5700/commits/2bda29a50a2b2abfec3f40d197b08b076ab9ba88)
-- **Dépôt** : openzeppelin/openzeppelin-contracts
-- **Date** : 27 mai 2025
-- **Contexte** :
-  J’ai simulé un cas d’erreur volontaire lié à un beacon invalide (contrat `BadBeacon.sol`) et ajouté un test automatisé dans `BeaconProxy.test.js` pour valider le comportement attendu du système.
-
-- **Apports** :
-  - Création d’un contrat Solidity spécifique à des fins de test
-  - Intégration propre dans une suite de tests existante
-  - Résolution de problèmes liés à Husky, Ethers et compilation locale
-  - Contribution assistée par IA pour les décisions critiques et la documentation
-
-- **Objectif** :
-  Montrer ma capacité à contribuer à des projets Solidity open source avec rigueur, tests et clarté, en intégrant une démarche augmentée par IA.
+Welcome to the summary of my public Solidity contributions.  
+Each project was built as part of my Web3 developer journey, using an IA-assisted methodology to ensure rigor, clarity, and consistency.
 
 ---
 
-## À venir
+## ✅ Contribution 1: OpenZeppelin Contracts – Invalid Beacon Test
 
-- Publication d’un mini-ERC20 documenté
-- Contributions à des audits gas + sécurité (via projets open source ou forks)
+- **PR**: [#5700 – openzeppelin/openzeppelin-contracts](https://github.com/OpenZeppelin/openzeppelin-contracts/pull/5700)
+- **Date**: May 27, 2025
+
+**Context**:  
+Simulated an edge-case failure using an invalid beacon (`BadBeacon.sol`)  
+Added a dedicated test in `BeaconProxy.test.js` to verify correct system behavior.
+
+**Highlights**:
+- Crafted a custom Solidity test contract
+- Integrated seamlessly into a large test suite
+- Resolved technical issues with Husky, Ethers, and local compilation
+- Collaborated with the repo maintainers using IA-guided analysis
 
 ---
 
-**Signé** : Igor  
-**Date** : 27 May 2025
+## ✅ Contribution 2: SimpleVault – Minimal Ether Vault Contract
+
+- **Project**: [SimpleVault](./SimpleVault/README.md)
+- **Date**: June 7, 2025
+
+**Context**:  
+Basic contract allowing a single owner to securely deposit and withdraw ETH.  
+Used to demonstrate the correct usage of `msg.sender`, `msg.value`, `require`, and `transfer`.
+
+**Highlights**:
+- Minimal and clear code, tested in Remix
+- `onlyOwner` modifier for secured withdrawals
+- Public function to read contract balance
+- Fully documented as a pedagogical base
+
+---
+
+## ✅ Contribution 3: UserRegistry – On-chain User Management
+
+- **Project**: [UserRegistry](./UserRegistry/README.md)
+- **Date**: May 30, 2025
+
+**Context**:  
+A contract allowing users to register themselves with a name, email, and timestamp.  
+Useful for learning about mappings, structs, events, and input constraints.
+
+**Highlights**:
+- Mapping `address => User` with uniqueness checks
+- Prevents double registration
+- Emits events on registration
+- Great for Web3 form/backend prototypes
+
+---
+
+## ✅ Contribution 4: SimpleDAO – Voting-Based DAO Prototype
+
+- **Project**: [SimpleDAO](./SimpleDAO/README.md)
+- **Date**: June 2, 2025
+
+**Context**:  
+A basic DAO structure where members can create proposals, vote, and trigger execution.  
+Created to understand governance patterns and collective decision-making on-chain.
+
+**Highlights**:
+- Member-based voting system with proposal lifecycle
+- Threshold and quorum logic
+- Shows DAO patterns in a simplified, readable format
+
+---
+
+## ✅ Contribution 5: MiniMultiSigWallet – Lightweight Multisig Wallet
+
+- **Project**: [MiniMultiSigWallet](./MiniMultiSigWallet/README.md)
+- **Date**: June 4, 2025
+
+**Context**:  
+A minimal multi-signature wallet that requires multiple approvals to execute a transaction.  
+Implemented and tested using Hardhat.
+
+**Highlights**:
+- Owners can submit, approve, and execute transactions
+- Approval logic with threshold enforcement
+- Uses nested mappings and structs
+- Documented for reuse and audit training
+
+---
+
+## ✅ Contribution 6: MyERC20Token – Minimal ERC20 Token with Extensions
+
+- **Project**: [MyERC20Token](./MyERC20Token/README.md)
+- **Date**: May 29, 2025
+
+**Context**:  
+Custom ERC20 token based on OpenZeppelin’s implementation.  
+Includes a `burn()` function and tested via Hardhat.
+
+**Highlights**:
+- Clean ERC20 base using OpenZeppelin Contracts
+- Custom `burn(uint256)` function with `msg.sender` and `totalSupply` logic
+- Unit tests covering mint, burn, and transfers
+- Ready-to-fork and clearly documented
+
+---
+
+## 🔜 Coming Up
+
+- Final deployment of a feature-complete ERC20 with `mint`, `burn`, `approve`, and `transferFrom`
+- Public contributions in gas optimization and security audits
+- Solidity teaching materials (tested contracts, use-cases, common pitfalls)
+
+---
+
+📅 **Last updated**: June 7, 2025  
+✍️ **Signed**: Dozgor.dev  
