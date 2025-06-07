@@ -1,5 +1,5 @@
 
-# 🧱 Contributions publiques Solidity – Igor (IA-assisted Solidity Contributor)
+# 🧱 Contributions publiques Solidity – Dozgor (IA-assisted Solidity Contributor)
 
 Bienvenue dans ce fichier récapitulatif de mes contributions publiques en Solidity, réalisées dans le cadre de mon apprentissage et de ma transition vers le freelance Web3.
 
