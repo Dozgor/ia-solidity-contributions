@@ -41,7 +41,7 @@ Used to demonstrate the correct usage of `msg.sender`, `msg.value`, `require`, a
 
 ## ✅ Contribution 3: UserRegistry – On-chain User Management
 
-- **Project**: [UserRegistry](./UserRegistry/README.md)
+- **Project**: [UserRegistry](./user-registry/README.md)
 - **Date**: May 30, 2025
 
 **Context**:  
@@ -58,7 +58,7 @@ Useful for learning about mappings, structs, events, and input constraints.
 
 ## ✅ Contribution 4: SimpleDAO – Voting-Based DAO Prototype
 
-- **Project**: [SimpleDAO](./SimpleDAO/README.md)
+- **Project**: [SimpleDAO](./Simple-DAO/README.md)
 - **Date**: June 2, 2025
 
 **Context**:  
