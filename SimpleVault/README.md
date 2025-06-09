@@ -14,28 +14,23 @@ Written in Solidity ^0.8.0.
 
 ```solidity
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.20;
 
 contract SimpleVault {
-    address public owner;
+    mapping(address => uint256) public balances;
 
-    constructor() {
-        owner = msg.sender;
+    function deposit() external payable {
+        balances[msg.sender] += msg.value;
     }
 
-    modifier onlyOwner() {
-        require(msg.sender == owner, "Not the owner");
-        _;
-    }
+    function withdraw() external {
+        uint256 amount = balances[msg.sender];
+        require(amount > 0, "Nothing to withdraw");
 
-    function deposit() public payable {
-        require(msg.value > 0, "You must send ether");
+        balances[msg.sender] = 0;
+        payable(msg.sender).transfer(amount);
     }
-
-    function withdraw(uint _amount) public onlyOwner {
-        require(_amount <= address(this).balance, "Not enough balance");
-        payable(msg.sender).transfer(_amount);
-    }
+}
 ```
 
 ## ✅ Tests
