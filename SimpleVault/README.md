@@ -36,6 +36,7 @@ contract SimpleVault {
         require(_amount <= address(this).balance, "Not enough balance");
         payable(msg.sender).transfer(_amount);
     }
+```
 
 ## ✅ Tests
 
