@@ -37,6 +37,19 @@ contract SimpleVault {
         payable(msg.sender).transfer(_amount);
     }
 
+## ✅ Tests
+
+Ce contrat a été testé avec Hardhat.
+
+- ✔️ `deposit()` : accepte les fonds de l'utilisateur
+- ✔️ `withdraw()` : permet à l'utilisateur de retirer ses fonds
+- Tous les tests passent (`npx hardhat test`)
+
+```bash
+SimpleVault
+  ✔ should accept deposits
+  ✔ should allow withdrawal
+
     function getBalance() public view returns (uint) {
         return address(this).balance;
     }
