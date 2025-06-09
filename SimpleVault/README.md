@@ -1,18 +1,33 @@
-# SimpleVault - Solidity Smart Contract
+# 🔐 SimpleVault
 
-A minimal and educational smart contract to deposit and withdraw Ether securely.  
-Written in Solidity ^0.8.0.
+A minimal Solidity smart contract that allows users to securely deposit and withdraw funds.  
+Designed for learning, showcasing clean patterns, and demonstrating testing with Hardhat.
+
+---
 
 ## 🧠 Features
 
-- Owner-restricted withdrawals
-- Ether deposits using `msg.value`
-- Reverts on invalid withdrawal attempts
-- Public balance query
+- **Deposit Ether** into the vault with `deposit()`
+- **Withdraw available balance** with `withdraw()`
+- **Per-user balance tracking** with a public `balances` mapping
 
-## 📜 Smart Contract
+---
 
-```solidity
+## ✅ Tests
+
+This contract is fully tested using [Hardhat](https://hardhat.org).
+
+```bash
+SimpleVault
+  ✔ should accept deposits
+  ✔ should allow withdrawal
+To run the tests locally:
+npx hardhat test
+```
+
+## 📄 Contract Code
+
+```bash
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
@@ -33,43 +48,33 @@ contract SimpleVault {
 }
 ```
 
-## ✅ Tests
+## 🧪 Technologies Used
 
-Ce contrat a été testé avec Hardhat.
+Solidity ^0.8.20
 
-- ✔️ `deposit()` : accepte les fonds de l'utilisateur
-- ✔️ `withdraw()` : permet à l'utilisateur de retirer ses fonds
-- Tous les tests passent (`npx hardhat test`)
+Hardhat for development and testing
+
+Chai + Ethers for assertions
+
+## 🚀 Usage
+
+Clone the repository
+
+Navigate to the SimpleVault directory
+
+Run:
 
 ```bash
-SimpleVault
-  ✔ should accept deposits
-  ✔ should allow withdrawal
-
-    function getBalance() public view returns (uint) {
-        return address(this).balance;
-    }
-}
+npm install
+npx hardhat test
 ```
 
-## 🧪 Testing
+## 🧑‍💻 About the Author
 
-You can deploy and test this contract directly in Remix IDE:
+I'm Dozgor, a Solidity developer building clean, tested contracts using modern tooling and AI assistance.
+This project is part of my freelance portfolio.
+Feel free to reach out for smart contract development, testing, or auditing.
 
-Deploy the contract
+## 📧 Contact: dozgor.dev@proton.me
 
-Call deposit() with a value (e.g. 0.1 ETH)
-
-Use getBalance() to verify
-
-Call withdraw(amount) from the owner account
-
-## 📂 Structure
-
-SimpleVault.sol — Smart contract
-
-README.md — Documentation
-
-## 🔖 License
-
-MIT License
+## 🌐 Portfolio: github.com/Dozgor
