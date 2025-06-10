@@ -32,6 +32,20 @@ getApprovalCount(uint txIndex)	Get number of approvals for a transaction
 
 executeTransaction(uint txIndex)	Executes the transaction if enough approvals
 
+## 📌 Example usage (Remix)
+
+```solidity
+// Step 1: Submit a transaction
+submitTransaction(0xAbC123..., 1 ether, "0x");
+
+// Step 2: Approve it from 2 different owner accounts
+approveTransaction(0);
+approveTransaction(0);
+
+// Step 3: Execute once threshold is reached
+executeTransaction(0);
+```
+
 ## 🛡️ Security
 
 Only registered owners can submit/approve/execute
