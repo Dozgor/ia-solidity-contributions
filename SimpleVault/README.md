@@ -58,4 +58,5 @@ test/
 
 MIT — libre d’usage, de copie, de modification et de partage.
 
+HEAD
 ## 👨‍🔧 Réalisé par Dozgor, développeur Solidity guidé par l’IA pour accélérer l’apprentissage et garantir la qualité.
