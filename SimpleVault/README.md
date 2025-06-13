@@ -1,80 +1,61 @@
-# 🔐 SimpleVault
+# 🔐 SimpleVault – Contrat Solidity pédagogique
 
-A minimal Solidity smart contract that allows users to securely deposit and withdraw funds.  
-Designed for learning, showcasing clean patterns, and demonstrating testing with Hardhat.
-
----
-
-## 🧠 Features
-
-- **Deposit Ether** into the vault with `deposit()`
-- **Withdraw available balance** with `withdraw()`
-- **Per-user balance tracking** with a public `balances` mapping
+Ce dépôt contient un contrat Ethereum simple nommé `SimpleVault`, conçu pour illustrer les bases suivantes :
+- le **stockage d'ether par utilisateur** (`deposit`)
+- le **retrait sécurisé réservé à un administrateur** (`withdraw`)
+- la **pause du contrat en cas de besoin**
+- les **tests automatisés** avec Hardhat
 
 ---
 
-## ✅ Tests
+## 🎯 Objectif du projet
 
-This contract is fully tested using [Hardhat](https://hardhat.org).
+> Offrir un exemple clair et sécurisé d’un coffre-fort minimal en Solidity avec contrôle d’accès et tests unitaires. Ce contrat est utilisé comme base pédagogique pour apprendre Solidity et développer une vitrine freelance Web3.
+
+---
+
+## 💡 Fonctionnalités principales
+
+- `deposit()` : permet à tout utilisateur de déposer des fonds dans le coffre (stockés par adresse)
+- `withdraw()` : permet à l’**admin uniquement** de retirer les fonds qu’il a déposés
+- `pause()` / `unpause()` : activables par l’admin, empêchent les dépôts et retraits
+- `receive()` : permet de recevoir de l’ETH directement
+- Modificateurs `onlyAdmin` et `whenNotPaused`
+
+---
+
+## 🧪 Tests automatisés (Hardhat + Chai)
+
+Les tests valident les comportements suivants :
+- ✅ L'admin peut déposer et retirer ses fonds
+- ❌ Un non-admin ne peut pas appeler `withdraw`
+- (Bonus possible) ❌ Le contrat en pause rejette les appels
 
 ```bash
-SimpleVault
-  ✔ should accept deposits
-  ✔ should allow withdrawal
-To run the tests locally:
 npx hardhat test
 ```
 
-## 📄 Contract Code
+## 👨‍💻 Ce que ce projet démontre
+
+Structuration propre d’un contrat Solidity simple
+
+Bonnes pratiques de sécurité (require, modifiers, séparation des rôles)
+
+Maitrise de Hardhat et des tests unitaires
+
+Démarche "IA-assisted Solidity contributor" (Dozgor)
+
+## 📂 Structure
 
 ```bash
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
-
-contract SimpleVault {
-    mapping(address => uint256) public balances;
-
-    function deposit() external payable {
-        balances[msg.sender] += msg.value;
-    }
-
-    function withdraw() external {
-        uint256 amount = balances[msg.sender];
-        require(amount > 0, "Nothing to withdraw");
-
-        balances[msg.sender] = 0;
-        payable(msg.sender).transfer(amount);
-    }
-}
+contracts/
+  └── SimpleVault.sol
+test/
+  └── SimpleVault.test.js
 ```
 
-## 🧪 Technologies Used
+## 🤝 Licence
 
-Solidity ^0.8.20
+MIT — libre d’usage, de copie, de modification et de partage.
 
-Hardhat for development and testing
-
-Chai + Ethers for assertions
-
-## 🚀 Usage
-
-Clone the repository
-
-Navigate to the SimpleVault directory
-
-Run:
-
-```bash
-npm install
-npx hardhat test
-```
-
-## 🧑‍💻 About the Author
-
-I'm Dozgor, a Solidity developer building clean, tested contracts using modern tooling and AI assistance.
-This project is part of my freelance portfolio.
-Feel free to reach out for smart contract development, testing, or auditing.
-
-## 📧 Contact: dozgor.dev@proton.me
-
-## 🌐 Portfolio: github.com/Dozgor
+## 👨‍🔧 Réalisé par Dozgor, développeur Solidity guidé par l’IA pour accélérer l’apprentissage et garantir la qualité.
