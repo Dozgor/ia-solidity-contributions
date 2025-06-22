@@ -104,6 +104,25 @@ Includes a `burn()` function and tested via Hardhat.
 - Unit tests covering mint, burn, and transfers
 - Ready-to-fork and clearly documented
 
+## ✅ Contribution 7: OpenZeppelin Contracts – ERC165 Invalid ID Test
+
+PR: #1 – openzeppelin/openzeppelin-contracts
+Date: June 22, 2025
+Context:
+Added a unit test in ERC165Checker.test.js to validate that the function supportsInterface returns false when provided with the reserved EIP-165 interface ID 0xffffffff.
+
+Highlights:
+
+Reinforced EIP-165 compliance with a boundary test
+
+Aligned with standard testing practices in OpenZeppelin
+
+Wrote, documented, and submitted PR directly through GitHub UI
+
+Awaiting feedback from OpenZeppelin maintainers (actively monitored)
+
+Demonstrates ability to contribute to production-grade Solidity codebases
+
 ---
 
 ## 🔜 Coming Up
