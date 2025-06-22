@@ -1,7 +1,9 @@
-# 🧱 Public Solidity Contributions – Dozgor (IA-assisted Solidity Contributor)
+### 🧱 Public Solidity Contributions – Dozgor (IA-assisted Solidity Contributor)
 
-Welcome to the summary of my public Solidity contributions.  
-Each project was built as part of my Web3 developer journey, using an IA-assisted methodology to ensure rigor, clarity, and consistency.
+This document summarizes my open-source contributions as part of my journey to become a professional Solidity developer.  
+All projects were built using a rigorously guided AI-assisted methodology and demonstrate real-world skills applicable to freelance and team work.
+
+## 🔗 GitHub Profile: [github.com/Dozgor](https://github.com/Dozgor)
 
 ---
 
@@ -133,5 +135,15 @@ Demonstrates ability to contribute to production-grade Solidity codebases
 
 ---
 
-📅 **Last updated**: June 7, 2025  
+## 🎯 Freelance-Ready Skills Highlight
+
+- Writing and testing smart contracts using Hardhat, Remix, and Foundry  
+- Contributing to large codebases (OpenZeppelin, community projects)  
+- Creating clean, readable, and documented code for reuse and audits  
+- Communicating clearly via Pull Requests and collaborative Git workflows  
+- Available for missions involving auditing, test writing, smart contract development, and Solidity pedagogy
+
+## 📬 Contact: dozgor.dev@proton.me
+
+📅 **Last updated**: June 22, 2025  
 ✍️ **Signed**: Dozgor.dev  
