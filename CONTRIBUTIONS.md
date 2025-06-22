@@ -1,4 +1,4 @@
-### 🧱 Public Solidity Contributions – Dozgor (IA-assisted Solidity Contributor)
+# 🧱 Public Solidity Contributions – Dozgor (IA-assisted Solidity Contributor)
 
 This document summarizes my open-source contributions as part of my journey to become a professional Solidity developer.  
 All projects were built using a rigorously guided AI-assisted methodology and demonstrate real-world skills applicable to freelance and team work.
