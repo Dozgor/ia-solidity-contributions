@@ -12,3 +12,19 @@ docs/
 
 # Dotenv file
 .env
+
+# Node modules
+node_modules/
+
+# Hardhat artifacts and cache
+artifacts/
+typechain/
+coverage/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# VS Code config
+.vscode/
+>>>>>>> a8a7fa51c533880d9e53d357203a19aa9b9079b1
