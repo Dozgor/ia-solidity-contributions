@@ -1,16 +1,16 @@
-#🧠 IA-Assisted Solidity Contributions
+# 🧠 IA-Assisted Solidity Contributions
 Bienvenue ! Je suis Dozgor, développeur Solidity, en transition vers le freelance Web3.
 
 Ce dépôt regroupe mes contributions open source, mini-projets Solidity, tests automatisés (Foundry & Hardhat), et autres expérimentations réalisées avec l’aide d’une IA spécialisée (ChatGPT).
 
-##🎯 Objectif
+## 🎯 Objectif
 Créer des contrats sécurisés, lisibles et bien testés, grâce à :
 
 -Mon expertise grandissante en Solidity
 
 -L’assistance IA continue (aide au design, aux tests, à l’optimisation, etc.)
 
-##🛠️ Outils utilisés
+## 🛠️ Outils utilisés
 -Solidity
 
 -Hardhat
@@ -36,14 +36,14 @@ docs/	Documentation additionnelle (CONTRIBUTIONS.md)
 test/, script/, src/	Arborescence des projets Foundry
 README.md, .gitignore, foundry.toml	Fichiers racine de configuration
 
-##✅ Exemple de Contribution Open Source
+## ✅ Exemple de Contribution Open Source
 Pull Request #5700 — OpenZeppelin Contracts
 
 -Création de BadBeacon.sol pour simuler un beacon invalide
 
 -Ajout d’un test automatisé dans BeaconProxy.test.js pour tester un mauvais comportement
 
-##🔧 Usage Foundry
+## 🔧 Usage Foundry
 Installer et utiliser Foundry
 Documentation officielle → Foundry Book
 
@@ -62,7 +62,7 @@ forge script script/Counter.s.sol:CounterScript \
   --private-key <your_private_key>
 ```
 
-##🧭 Prochaines étapes
+## 🧭 Prochaines étapes
 -📦 Créer une mini-lib Solidity réutilisable
 
 -🧪 Ajouter des tests fuzzing et edge-cases
@@ -71,7 +71,7 @@ forge script script/Counter.s.sol:CounterScript \
 
 - Publier un mini ERC20 documenté
 
-##📫 Contact
+## 📫 Contact
 Je suis ouvert à toute mission freelance courte dans l’écosystème Ethereum/Web3.
 
 👉 Contactez-moi via GitHub ou LinkedIn
