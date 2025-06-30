@@ -24,17 +24,18 @@ Créer des contrats sécurisés, lisibles et bien testés, grâce à :
 -Git + GitHub
 
 ## 📁 Structure du dépôt
-Dossier / Fichier	Description
-TimeLockedWallet	Contrat verrouillant des fonds jusqu’à une date donnée (Foundry)
-MiniMultiSigWallet	Contrat multisig simple (WIP)
-MyERC20Token	Implémentation d’un token ERC20 de base
-QuizDevinette	Jeu de devinettes Solidity avec test en JS
-Simple-DAO	DAO basique avec système de proposition et vote
-SimpleVault	Coffre sécurisé avec dépôt et retrait sur Hardhat
-user-registry	Contrat d’enregistrement d’utilisateurs
-docs/	Documentation additionnelle (CONTRIBUTIONS.md)
-test/, script/, src/	Arborescence des projets Foundry
-README.md, .gitignore, foundry.toml	Fichiers racine de configuration
+| Dossier / Fichier                         | Description                                                      |
+| ----------------------------------------- | ---------------------------------------------------------------- |
+| `TimeLockedWallet`                        | Contrat verrouillant des fonds jusqu’à une date donnée (Foundry) |
+| `MiniMultiSigWallet`                      | Contrat multisig simple (WIP)                                    |
+| `MyERC20Token`                            | Implémentation d’un token ERC20 de base                          |
+| `QuizDevinette`                           | Jeu de devinettes Solidity avec test en JS                       |
+| `Simple-DAO`                              | DAO basique avec système de proposition et vote                  |
+| `SimpleVault`                             | Coffre sécurisé avec dépôt et retrait sur Hardhat                |
+| `user-registry`                           | Contrat d’enregistrement d’utilisateurs                          |
+| `docs/`                                   | Documentation additionnelle (`CONTRIBUTIONS.md`)                 |
+| `test/`, `script/`, `src/`                | Arborescence des projets Foundry                                 |
+| `README.md`, `.gitignore`, `foundry.toml` | Fichiers racine de configuration                                 |
 
 ## ✅ Exemple de Contribution Open Source
 Pull Request #5700 — OpenZeppelin Contracts
