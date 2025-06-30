@@ -23,7 +23,7 @@ Créer des contrats sécurisés, lisibles et bien testés, grâce à :
 
 -Git + GitHub
 
-##📁 Structure du dépôt
+## 📁 Structure du dépôt
 Dossier / Fichier	Description
 TimeLockedWallet	Contrat verrouillant des fonds jusqu’à une date donnée (Foundry)
 MiniMultiSigWallet	Contrat multisig simple (WIP)
