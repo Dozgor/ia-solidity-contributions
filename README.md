@@ -1,78 +1,76 @@
-# 🧠 IA-Assisted Solidity Contributions
-Bienvenue ! Je suis Dozgor, développeur Solidity, en transition vers le freelance Web3.
+# IA-Assisted Solidity Contributions
 
-Ce dépôt regroupe mes contributions open source, mini-projets Solidity, tests automatisés (Foundry & Hardhat), et autres expérimentations réalisées avec l’aide d’une IA spécialisée (ChatGPT).
+Bienvenue ! Je suis **Dozgor**, développeur Solidity en transition vers le **freelance Web3**.
+
+Ce dépôt regroupe mes **contributions open source**, **expérimentations Solidity**, et **tests automatisés** réalisés avec l’assistance d’une **IA spécialisée**.
+
+---
 
 ## 🎯 Objectif
-Créer des contrats sécurisés, lisibles et bien testés, grâce à :
 
--Mon expertise grandissante en Solidity
+Créer des **contrats sécurisés**, **lisibles** et **bien testés** grâce à l’alliance entre :
 
--L’assistance IA continue (aide au design, aux tests, à l’optimisation, etc.)
+- Mon expertise grandissante en Solidity
+- L’accompagnement pas à pas d’une IA pour :
+  - analyser le code
+  - générer des tests unitaires
+  - suggérer des optimisations
+  - documenter efficacement
+
+---
 
 ## 🛠️ Outils utilisés
--Solidity
 
--Hardhat
+- Solidity
+- Foundry (Forge, Cast, Anvil)
+- Hardhat
+- Remix
+- Git + GitHub
+- ChatGPT (pour l’aide IA)
 
--Foundry (Forge, Anvil, Cast, Chisel)
+---
 
--Remix IDE
+## 🗂️ Structure du dépôt
 
--ChatGPT (IA pour conseils, tests, refacto)
+| **Dossier / Fichier**                                                | **Description**                                                    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------|
+| [`TimeLockedWallet`](TimeLockedWallet)                               | Contrat verrouillant des fonds jusqu’à une date donnée (Foundry)   |
+| [`MiniMultiSigWallet`](MiniMultiSigWallet)                           | Contrat multisig simple (WIP)                                      |
+| [`MyERC20Token`](MyERC20Token)                                       | Implémentation d’un token ERC20 de base                            |
+| [`QuizDevinette`](QuizDevinette)                                     | Jeu de devinettes Solidity avec test en JS                         |
+| [`Simple-DAO`](Simple-DAO)                                           | DAO basique avec système de proposition et vote                    |
+| [`SimpleVault`](SimpleVault)                                         | Coffre sécurisé avec dépôt et retrait sur Hardhat                  |
+| [`user-registry`](user-registry)                                     | Contrat d’enregistrement d’utilisateurs                            |
+| [`docs/`](docs)                                                      | Documentation additionnelle (`CONTRIBUTIONS.md`)                   |
+| [`test/`](test), [`script/`](script), [`src/`](src)                  | Arborescence des projets Foundry                                   |
+| [`README.md`](README.md), [`.gitignore`](.gitignore), [`foundry.toml`](foundry.toml) | Fichiers racine de configuration                   |
 
--Git + GitHub
+---
 
-## 📁 Structure du dépôt
-| Dossier / Fichier                         | Description                                                      |
-| ----------------------------------------- | ---------------------------------------------------------------- |
-| `TimeLockedWallet`                        | Contrat verrouillant des fonds jusqu’à une date donnée (Foundry) |
-| `MiniMultiSigWallet`                      | Contrat multisig simple (WIP)                                    |
-| `MyERC20Token`                            | Implémentation d’un token ERC20 de base                          |
-| `QuizDevinette`                           | Jeu de devinettes Solidity avec test en JS                       |
-| `Simple-DAO`                              | DAO basique avec système de proposition et vote                  |
-| `SimpleVault`                             | Coffre sécurisé avec dépôt et retrait sur Hardhat                |
-| `user-registry`                           | Contrat d’enregistrement d’utilisateurs                          |
-| `docs/`                                   | Documentation additionnelle (`CONTRIBUTIONS.md`)                 |
-| `test/`, `script/`, `src/`                | Arborescence des projets Foundry                                 |
-| `README.md`, `.gitignore`, `foundry.toml` | Fichiers racine de configuration                                 |
+## ✅ Exemple de contribution
 
-## ✅ Exemple de Contribution Open Source
-Pull Request #5700 — OpenZeppelin Contracts
+### 🔧 [PR #5700 – OpenZeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts/pull/5700)
 
--Création de BadBeacon.sol pour simuler un beacon invalide
+- Création d’un contrat `BadBeacon.sol` pour simuler un beacon invalide
+- Ajout d’un test automatisé dans `BeaconProxy.test.js` pour vérifier le comportement du proxy
 
--Ajout d’un test automatisé dans BeaconProxy.test.js pour tester un mauvais comportement
+---
 
-## 🔧 Usage Foundry
-Installer et utiliser Foundry
-Documentation officielle → Foundry Book
+## 📦 Prochaines étapes
 
-```bash
-forge build           # Compilation
-forge test            # Tests unitaires
-forge fmt             # Formatage du code
-forge snapshot        # Snapshot de gas
-anvil                 # Lancer un node local
-```
-Déployer un contrat :
+- Publication d’un mini ERC20 pédagogique
+- Création de mini-libraries Solidity open source
+- Participation à des audits de sécurité et optimisations gas
+- Réalisation de missions freelance encadrées et documentées
 
-```bash
-forge script script/Counter.s.sol:CounterScript \
-  --rpc-url <your_rpc_url> \
-  --private-key <your_private_key>
-```
-
-## 🧭 Prochaines étapes
--📦 Créer une mini-lib Solidity réutilisable
-
--🧪 Ajouter des tests fuzzing et edge-cases
-
--🚀 Lancer des missions freelance courtes (audit, écriture, correction)
-
-- Publier un mini ERC20 documenté
+---
 
 ## 📫 Contact
-Je suis ouvert à toute mission freelance courte dans l’écosystème Ethereum/Web3.
 
-👉 Contactez-moi via GitHub ou LinkedIn
+Je suis ouvert à des missions freelance courtes, des contributions open source, ou des collaborations formatrices.  
+📩 N’hésitez pas à me contacter via GitHub ou LinkedIn : **[linkedin.com/in/dozgor-devchain](https://www.linkedin.com/in/dozgor-devchain/)**
+
+---
+
+> Ce dépôt est en constante amélioration, grâce à une démarche rigoureuse, IA-assistée, et tournée vers la qualité open source.
+
