@@ -1,4 +1,4 @@
-# SimpleDAO
+#SimpleDAO
 
 A lightweight, secure and minimal DAO smart contract for managing shared ETH funds by collective approval.
 
@@ -6,7 +6,7 @@ Built by Dozgor as part of a Solidity learning and freelance portfolio.
 
 ---
 
-## 🔍 Overview
+##🔍 Overview
 
 This contract allows a group of members to:
 
@@ -14,7 +14,7 @@ This contract allows a group of members to:
 - Approve the proposal (1 vote per member)
 - Execute it once a majority is reached
 
-### Use cases:
+###Use cases:
 - Shared wallet between multiple contributors
 - Micro-DAO for managing a project treasury
 - Co-approval for collective payments
