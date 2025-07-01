@@ -1,40 +1,46 @@
 # TimeLockedWallet
 
-Ce contrat `TimeLockedWallet` permet de verrouiller des fonds en ETH jusqu’à une date donnée. Il a été entièrement testé avec **Foundry**.
+This `TimeLockedWallet` contract allows locking ETH funds until a specific future date.  
+It has been fully tested using Foundry.
+
+---
 
 ## 📄 Description
 
-- Le contrat est déployé avec une date de déverrouillage (`unlockTime`) future.
-- L’ETH envoyé lors du déploiement est bloqué jusqu’à cette date.
-- Seul le propriétaire peut retirer les fonds une fois la date atteinte.
-- Des ETH supplémentaires peuvent être envoyés après le déploiement via `receive()`.
+The contract is deployed with a future **unlock time** (`unlockTime`).  
+Any ETH sent during deployment is locked until that time.  
+Only the **owner** can withdraw the funds once the date is reached.  
+Additional ETH can be sent after deployment via the `receive()` function.
+
+---
 
 ## 🧪 Tests (Foundry)
 
-Les tests automatisés couvrent :
+The automated tests cover:
 
-- ✅ Déploiement avec ou sans ETH
-- ✅ Blocage des retraits avant la date
-- ✅ Rejet si un tiers tente un retrait
-- ✅ Réception d’ETH après déploiement
-- ✅ Retrait réussi après le `unlockTime`
+- ✅ Deployment with or without ETH  
+- ✅ Withdrawal blocked before the unlock time  
+- ✅ Revert if a third party tries to withdraw  
+- ✅ Receiving ETH after deployment  
+- ✅ Successful withdrawal after unlock time
 
-Lancer les tests :
+To run the tests:
+
 ```bash
 forge test
 ```
-## 📁 Fichiers
-| Fichier                  | Rôle                       |
-| ------------------------ | -------------------------- |
-| `TimeLockedWallet.sol`   | Contrat principal          |
-| `TimeLockedWallet.t.sol` | Fichier de test avec Forge |
 
-## 🛠️ Améliorations possibles
-Événement Withdrawn à émettre lors du retrait
+## 📁 Files
+File	Role
+TimeLockedWallet.sol	Main contract
+TimeLockedWallet.t.sol	Test file using Forge
 
-Ajout d’un fallback function avec gestion spécifique
+## 🛠️ Potential Improvements
+Emit a Withdrawn event upon withdrawal
 
-Interface pour compatibilité avec d’autres contrats
+Add a fallback() function with specific logic
 
-## ✍️ Auteur
+Add an interface for broader contract compatibility
+
+## ✍️ Author
 Dozgor – github.com/Dozgor
